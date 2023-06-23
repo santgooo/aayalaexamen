@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aayalaexamen.Resumen">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Gray"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Gray"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblusuario" HorizontalTextAlignment="End" TextColor="Red" FontSize="16"></Label>
+            <Label Text="VENTANA 3" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="20"/>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" IsReadOnly="True" Grid.Row="0" Grid.Column="1"/>
+               
+                <Label Text="Apellido" HorizontalTextAlignment="Start" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" IsReadOnly="True" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Fecha" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtFecha" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Edad" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtEdad" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
+                
+                <Label Text="Pais" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtPais" IsReadOnly="True" Grid.Row="4" Grid.Column="1"/>
+               
+                <Label Text="Ciudad" HorizontalTextAlignment="Start" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtCiudad" IsReadOnly="True" Grid.Row="5" Grid.Column="1"/>
+               
+                <Label Text="Monto Inicial" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtMontoI" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+                
+                <Label Text="Monto Mensula" HorizontalTextAlignment="Start" Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtMontoM" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+                
+                <Label Text="Pago Total" HorizontalTextAlignment="Start" Grid.Row="8" Grid.Column="0"/>
+                <Entry x:Name="txtEstudiante" IsReadOnly="True" Grid.Row="8" Grid.Column="1"/>
+                
+            </Grid>
+        
+        
+            <Button x:Name="btnSalir" Text="SALIR" Clicked="btnSalir_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

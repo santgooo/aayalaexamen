@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aayalaexamen.Login" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LOGIN" HorizontalTextAlignment="Center" Style="{StaticResource miEstilo}"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0" Style="{StaticResource miEstilo}"/>
+                <Label Text="CONTRASEÑA" FontSize="20" Grid.Row="1" Grid.Column="0" Style="{StaticResource miEstilo}"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" Grid.Row="0" Grid.Column="1" Style="{StaticResource miEstilo1}"/>
+                <Entry x:Name="txtClave" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1" Style="{StaticResource miEstilo1}"/>
+
+
+            </Grid>
+            
+            <Button x:Name="btnInicio" Text="Inicio Sesion" Clicked="btnInicio_Clicked" Grid.Row="2" Grid.Column="0"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
